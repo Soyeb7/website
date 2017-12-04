@@ -1,0 +1,44 @@
+
+.navbar_header_gj, .main_centre_gj, .footer_gj  {
+  display: none;
+}
+
+#nav-menu {
+	display:none;
+}
+
+.nav-menu-show {
+	display:inline-block;
+}
+
+
+
+/* Navigation */
+/*
+header {
+  display: inline-block;
+  background: blue;
+  border: 5px solid red;
+}
+.page_title {
+  float: none;
+  background-color: red;
+  margin: auto;
+  display: inline-block;
+
+}
+
+nav  {
+  background-color: green;
+  display: inline-block;
+}
+
+nav ul {
+  margin: auto;
+  width: auto;
+}
+*/
+
+
+
+@media only screen and (min-width: 640px) {
