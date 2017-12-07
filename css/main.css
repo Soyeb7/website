@@ -3,17 +3,39 @@
   display: none;
 }
 
-/* Header */
+
+/*
+
+Adding Shadow to headers
+https://codepen.io/juanbrujo/pen/yGpAK
+
+*/
+
+/*
+
+Cool effect with CSS and SVG
+https://codepen.io/yoksel/pen/XJbzrO
+
+*/
+
+
+body {
+ /* background-image: url("../images/village/hilltop.png"); */
+  border: 10px;
+  border-radius: 20px;
+
+}
 
 header{
 	background-color: red;
 	margin-bottom: 10px;
 	height: auto;
+	margin-top: -17px;
+	
 }
 
 header form {
 	float: left;
-	
 }
 
 header a {
@@ -25,21 +47,30 @@ header a {
 	margin-bottom: 15px;
 	padding-top: 10px;
 	padding-left: 10px;
-	
-	
+
 }
+
 .page_title {
 	font-size: 20px;
 	margin-left: 20px;
-	
 }
 
+
+/*
+The  language button (dropdown) does not look the same in mobile as desktop view right now.
+
+Doesnt look right in oriented form either.
+*/
+
 #language_button {
-	margin-bottom: 10px;
+  margin-top: 12px;
 	margin-left: 12px;
 	margin-right: 10px;
 	width: 100%;
+  font-size: 18px;
+
 }
+
 
 
 #navBtn {
@@ -64,7 +95,7 @@ nav {
 	font-size: 20px;
 	list-style-type: none;
 	height: 35px;
-	
+
 }
 
 #nav-menu li a {
@@ -74,16 +105,8 @@ nav {
 
 
 
-	
 
-
-
-
-
-
-
-
-/* Navigation Javascript*/ 
+/* Navigation Javascript*/
 
 #nav-menu {
 	display:none;
@@ -91,26 +114,189 @@ nav {
 
 .nav-menu-show {
 	display:inline-block;
-	
+
 }
 
 
 
 
+/* Car Animation
+
+.fa fa-car {
+
+}
+#moveCar {
+    position: relative;
+    animation-name: carMoving;
+    animation-duration: 10s;
+    margin: 0;
+}
+
+@keyframes carMoving {
+    0%   {left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:50%; top:50%;}
+}
+
+*/
+
+
+/* Main Section */
 
 
 
+
+/* Top home section */
+
+.top-home-section {
+	
+	border: solid 5px;
+	
+}
 
 /* Gallery middle of home page */
 
 .photos-middle-of-page {
 	width: 100%;
 	height: auto;
+	
 }
 
 .photos-middle-of-page img{
-	max-width:45%; 
+	max-width:45%;
 	height: auto;
+}
+
+
+
+/* News in home section */
+
+
+/* Code for Desktop to make the news appear next to each other in blocks */
+
+/*
+.other_page_info {
+	
+	width: 100%;
+	border: 5px solid;
+	height: auto;
+	
+}
+
+.development_in_home {
+	border-radius: 10px; 
+	border: solid 5px;
+	max-width: 48%;
+	height: auto;
+	display: inline-block;
+	margin: 10px;
+	
+}
+
+
+.history_in_home {
+	border-radius: 10px; 
+	border: solid 5px;
+	max-width: 48%;
+	height: auto;
+	display: inline-block;
+	margin: 10px;
+	
+}
+
+
+*/
+
+.other_page_info {
+	
+	width: 100%;
+	border: 5px solid;
+	height: auto;
+	
+	
+}
+
+
+.development_in_home {
+	border-radius: 10px; 
+	border: solid 5px;
+
+	
+}
+
+
+.history_in_home {
+	border-radius: 10px; 
+	border: solid 5px;
+
+	
+	
+}
+
+
+
+
+/* CSS only show hide */
+.showhide_input_button {
+  visibility: hidden;
+}
+
+.showhide_input_button[type=checkbox]:checked + p {
+  transition: all 1s;
+  height: auto;
+  opacity: 1;
+}
+
+.showhide_input_button[type=checkbox]:checked + p {
+  height: auto;
+  opacity: 1;
+  
+}
+
+.showhide_input_button:before {
+  /* font-family: FontAwesome; */
+  /* content: "\f0fe"; */
+  content: "\002295";
+  position: absolute;
+  left: 15px;
+  visibility: visible;
+}
+
+.showhide_input_button[type=checkbox]:checked:before {
+  /* content: "\f146"; */
+  content: "\002296";
+}
+
+label h3 {
+  display: inline-block;
+  position: relative;
+  left: 25px;
+}
+
+.answer,
+.answer p {
+  height: 0;
+  opacity: 0;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+/* CSS only show hide */
+
+
+
+
+
+
+
+
+
+
+.map_home {
+	
+	
+	
 }
 
 

@@ -5,6 +5,9 @@
   <title>Jogwad</title>
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/responsive.css" type="text/css"> </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <!--
 CSS links
 http://krasimirtsonev.com/blog/article/Introduction-to-animations-in-HTML-css3-transitions-keyframes
@@ -15,17 +18,24 @@ https://xopixel.com/responsive-mobile-navigation-menu-tutorial-html5-css3/
 
 JavaScript links
 
+
+
+Animation Links
+
+https://webdesign.tutsplus.com/articles/css3-transitions-and-transforms-from-scratch--webdesign-4975
+
 -->
 
 
 
-<!-- 
+<!--
 
 Try adding a cross to the hamburger_menu
 
---> 
+-->
 
 <body>
+
 
   <header>
     <h1 class="header_title"> Jogwad </h1>
@@ -34,7 +44,8 @@ Try adding a cross to the hamburger_menu
         <option value="change_to_english" selected>English </option>
         <option value="change_to_gujrati">Gujrati</option>
       </select>
-    </form> <a href="index.html" class="page_title"> Home </a>
+    </form>
+    <a href="index.html" class="page_title"> Home </a>
 	<a href="#" id="navBtn">&#x2630;</a>
     <nav>
       <ul id="nav-menu">
@@ -45,7 +56,8 @@ Try adding a cross to the hamburger_menu
       </ul>
     </nav>
   </header>
-  
+
+
   <!--
   <header class="navbar_header_gj">
       <a href="index.html" class="page_title"> Home </a>
@@ -68,13 +80,20 @@ Try adding a cross to the hamburger_menu
 	<h1 class="page_title"> Jogwad </h1>
   </header>
   -->
-  
-  
+
+  <!-- Not using car right now
+
+  <p class="fa fa-car fa-5x" id="moveCar"></p>
+
+-->
+
+
   <main class="main_centre">
     <section class="top-home-section">
       <h2> Welcome to Jogwad </h2>
       <p> This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. </p>
     </section>
+	
     <section class="photos-middle-of-page">
       <h3> Beautiful Jogwad </h3>
       <!-- these photos will appear under each other in mobile mode
@@ -82,20 +101,38 @@ Try adding a cross to the hamburger_menu
     --><img src="images/masjid/masjid_far.png" alt=""> <img src="images/masjid/masjid_umar_entrance.png" alt="">
       <p><a href="gallery.html"> See more beautiful pictures of Jogwad </a> </p>
     </section>
-    <section class="development_in_home">
-      <h3> Development Brief </h3>
-      <p> Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page </p>
-    </section>
-    <section class="history_in_home">
-      <h3> History Brief </h3>
-      <p> Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page </p>
-    </section>
+	
+	
+	<section class="other_page_info">
+	
+      <section class="development_in_home">
+	    <label for="showhide1"> 
+        <h3> Development Brief </h3>
+	    </label>
+	    <input class="showhide_input_button" type="checkbox" id="showhide1">
+        <p class="answer"> Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page Over here I am going to be grabbing couple of the first lines from the development news page </p>
+      </section>
+	
+	
+	
+      <section class="history_in_home">
+	    <label for="showhide2">
+        <h3> History Brief </h3>
+	    </label>
+	    <input class="showhide_input_button" type="checkbox" id="showhide2">
+        <p class="answer"> Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page Over here I am going to be grabbing couple of the first lines from the History page </p>
+      </section>
+	
+	</section>
+	
+	
+	
     <section class="map_home">
       <h2> Visit Jogwad </h2>
       <p> Over here there will be MAPS showing the location of Jogwad Over here there will be MAPS showing the location of Jogwad Over here there will be MAPS showing the location of Jogwad Over here there will be MAPS showing the location of Jogwad Over here there will be MAPS showing the location of Jogwad Over here there will be MAPS showing the location of Jogwad Over here there will be MAPS showing the location of Jogwad Over here there will be MAPS showing the location of Jogwad </p>
     </section>
   </main>
-  <!-- 
+  <!--
 <main class="main_centre_gj">
   <section class="top-home-section">
     <div>

@@ -15,6 +15,5 @@ function showhidemenu() {
 	else {
 		navmenu.style.display = "none";
 	}
-	
-}
 
+}
