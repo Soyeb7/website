@@ -315,8 +315,8 @@ nav {
 .clock_time {
   border: 5px solid;
   top: 50%;
-  width: 75%;
-  margin: 0 auto;
+  width: 85%;
+  margin: auto;
   height: 100%;
 
 
@@ -331,10 +331,12 @@ nav {
 /* SVG Clock */
 
 svg {
+
   width: 256px;
   height: 256px;
   margin-left: 2%;
   margin-right: 2;
+
 
 
 
@@ -404,6 +406,138 @@ line {
 
 
 
+/* Footer */
+
+/*
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact {
+  width: 300px;
+  margin: auto;
+}
+
+.social {
+width: 300px;
+  margin: auto;
+}
+
+.social-list {
+  max-width: 300px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social h3, .contact h3 {
+  font-family: 'Open Sans', Sans Serif;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  background-color: #34495e;
+  background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  color: #fff;
+}
+
+footer i {
+  margin: 5px;
+
+}
+
+.social a{
+  color: none;
+}
+
+.social a:hover {
+  color: red;
+}
+
+.contact a:hover{
+  color: red;
+}
+
+*/
+
+
+
+hr{
+
+	margin: 30px 20px;
+	border-top:2px solid #1C1E26 ;
+	border-bottom:2px solid #38404D;
+}
+
+
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+
+}
+.list-inline li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+
+.social-icons {
+
+}
+
+.social-icons .fa {
+	font-size: 2em;
+}
+
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa{
+	border-radius: 50%;
+}
+
+.social-icons .fa:hover, .social-icons .fa:active {
+	color: #FFF;
+	-webkit-box-shadow: 1px 1px 3px #333;
+	-moz-box-shadow: 1px 1px 3px #333;
+	box-shadow: 1px 1px 3px #333;
+}
+.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active {
+	transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+}
+
+/* Color of the icon */
+.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
+
+.social-icons .fa-instagram{background-color:#A1755C;}
+
+.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;}
+
+.social-icons .fa-pinterest,.social-icons .fa-pinterest-square{background-color:#CC2127;}
+
+.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
+
+.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
 
 
 @media screen and (min-width: 650px) {
@@ -418,6 +552,7 @@ line {
 
   body {
   background: green;
+
   }
 
 }
