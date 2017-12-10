@@ -24,13 +24,16 @@ SVG
 https://codepen.io/binoculars/pen/wMOxrb
  Used this for clock#
 
+ https://stackoverflow.com/questions/7947975/id-like-to-create-a-javascript-clock-for-a-specific-time-zone
+ Used this for digital clock showing india time
+
  I can also use https://codepen.io/mmellado/pen/KMgwxy
  This one shows digital clock too
 
 
 Animation Links
 
-https://webdesign.tutsplus.com/articles/css3-transitions-and-transforms-from-scratch--webdesign-4975
+https://webdesign.tutsplus.com/articles/css3-transitions-and-transforms-from-scratch-webdesign-4975
 
 -->
 
@@ -47,6 +50,9 @@ Try adding a cross to the hamburger_menu
 
   <header>
     <h1 class="header_title"> Jogwad </h1>
+    <!-- Doesnt work to 5 hours 30 mins
+    <p id="clock"></p>
+  -->
     <form class="language_options">
       <select name="language_dropdown" id="language_button">
         <option value="change_to_english" selected>English </option>
@@ -54,6 +60,7 @@ Try adding a cross to the hamburger_menu
       </select>
     </form>
     <a href="index.html" class="page_title"> Home </a>
+
 	<a href="#" id="navBtn">&#x2630;</a>
     <nav>
       <ul id="nav-menu">
@@ -98,7 +105,9 @@ Try adding a cross to the hamburger_menu
 
   <main class="main_centre">
     <section class="top-home-section">
+
       <h2> Welcome to Jogwad </h2>
+
       <p> This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. This will have information about the village and where it is located. </p>
     </section>
 
@@ -113,10 +122,10 @@ Try adding a cross to the hamburger_menu
 
 	<section class="other_page_info">
 
+<!-- Try making the whole h3 clickable -->
+
       <section class="development_in_home">
-	    <label for="showhide1">
-        <h3> Development Brief </h3>
-	    </label>
+        <h3 class="showhide2"> Development Brief </h3>
 	    <input class="showhide_input_button" type="checkbox" id="showhide1">
         <p class="answer"> Animate how the text in here appears. </p>
       </section>
@@ -124,9 +133,7 @@ Try adding a cross to the hamburger_menu
 
 
       <section class="history_in_home">
-	    <label for="showhide2">
-        <h3> History Brief </h3>
-	    </label>
+        <h3 class="showhide2"> History Brief </h3>
 	    <input class="showhide_input_button" type="checkbox" id="showhide2">
         <p class="answer"> Animate how the text in here appears.  </p>
       </section>
@@ -137,38 +144,54 @@ Try adding a cross to the hamburger_menu
 
     <section class="map_home">
       <h2> Visit Jogwad </h2>
-      <section id="map">
-      </section>
-
-      <section id="weather">
-      </section>
-
-
-      <section id="clock_time">
-        <p class="england_time"> England </p>
-        <svg>
-  <g>
-
-    <circle r="126"/>
-    <g id="numbers"/>
-    <g id="ticks"/>
-    <g id="hands">
-      <g id="hour">
-        <line x1="-6" y1="0" x2="60" y2="0"/>
-      </g>
-      <g id="minute">
-        <line x1="-9" y1="0" x2="90" y2="0"/>
-      </g>
-      <g id="second">
-        <line x1="-12" y1="0" x2="120" y2="0"/>
-      </g>
-    </g>
-    <circle r="4"/>
-  </g>
-</svg>
-      </section>
-
     </section>
+    <section id="map">
+    </section>
+
+
+    <section class="clock_time">
+      <p class="jogwad_time">Jogwad</p>
+      <svg>
+      <g>
+
+        <circle r="126"/>
+        <g id="numbers"/>
+        <g id="ticks"/>
+        <g id="hands">
+          <g id="hour">
+            <line x1="-6" y1="0" x2="60" y2="0"/>
+          </g>
+          <g id="minute">
+            <line x1="-9" y1="0" x2="90" y2="0"/>
+          </g>
+          <g id="second">
+            <line x1="-12" y1="0" x2="120" y2="0"/>
+          </g>
+        </g>
+        <circle r="4"/>
+      </g>
+    </svg>
+  </section>
+
+
+
+
+<!--
+
+  -->
+
+
+
+
+
+
+
+
+
+
+    <section id="weather">
+    </section>
+
   </main>
   <!--
 <main class="main_centre_gj">
@@ -232,6 +255,8 @@ Try adding a cross to the hamburger_menu
   <script src="javascript/hamburger_menu.js"></script>
   <script src="javascript/map.js"></script>
   <script src="javascript/svg_clock.js"></script>
+  <script src="javascript/svg_clock_india.js"></script>
+  <script src="javascript/india_clock.js"> </script>
 
 
 
