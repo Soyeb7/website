@@ -4,7 +4,6 @@
 <head>
   <title>Jogwad</title>
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/responsive.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!--
@@ -13,9 +12,17 @@ http://krasimirtsonev.com/blog/article/Introduction-to-animations-in-HTML-css3-t
 
 HTML5 links
 
+https://codepen.io/markcaron/pen/pPZVWO
+Can use this for hamburger_menu without JS
+
 https://xopixel.com/responsive-mobile-navigation-menu-tutorial-html5-css3/
 
+https://codepen.io/ameyraut/pen/yfzog
+Used this for footer icons
+
 JavaScript links
+
+
 
 
 
@@ -65,7 +72,7 @@ Try adding a cross to the hamburger_menu
     <nav>
       <ul id="nav-menu">
         <li> <a href="index.html">Home</a> </li>
-        <li> <a href="history.html">History</a> </li>
+        <li> <a href="history.html">Jogwad Infromation</a> </li>
         <li><a href="development.html">Development</a> </li>
         <li><a href="gallery.html">Gallery</a> </li>
       </ul>
@@ -127,7 +134,9 @@ Try adding a cross to the hamburger_menu
       <section class="development_in_home">
         <h3 class="showhide2"> Development Brief </h3>
 	    <input class="showhide_input_button" type="checkbox" id="showhide1">
-        <p class="answer"> Animate how the text in here appears. </p>
+        <p class="answer">This text will come in</p>
+		
+
       </section>
 
 
@@ -150,7 +159,7 @@ Try adding a cross to the hamburger_menu
 
 
     <section class="clock_time">
-      <p class="jogwad_time">Jogwad</p>
+
       <svg>
       <g>
 
@@ -171,8 +180,38 @@ Try adding a cross to the hamburger_menu
         <circle r="4"/>
       </g>
     </svg>
+
+	<section class="text_box_clock">
+	<h3 class="jogwad_time"> Jogwad Time </h3>
+	<p> India Standard Time (IST) is 5:30 hours ahead of Coordinated Universal Time (UTC). 
+
+	 </p>
+	</section>
+
+<!-- Not using 
+	<svg class="england_clock">
+      <g>
+
+        <circle r="126"/>
+        <g id="numbers_england"/>
+        <g id="ticks_england"/>
+        <g id="hands_england">
+          <g id="hour_england">
+            <line x1="-6" y1="0" x2="60" y2="0"/>
+          </g>
+          <g id="minute_england">
+            <line x1="-9" y1="0" x2="90" y2="0"/>
+          </g>
+          <g id="second_england">
+            <line x1="-12" y1="0" x2="120" y2="0"/>
+          </g>
+        </g>
+        <circle r="4"/>
+      </g>
+    </svg>
   </section>
 
+  -->
 
 
 
@@ -235,65 +274,36 @@ Try adding a cross to the hamburger_menu
 
 -->
 
-<!--
 
 
-<footer>
 
-    <section class="social">
-      <h3>Social Links</h3>
-    <section class="social-list">
-
-      <a href="#">
-        <i class="fa fa-linkedin-square fa-4x"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-google-plus-square fa-4x"></i>
-        </a>
-        <a href="#">
-        <i class="fa fa-twitter-square fa-4x"></i>
-        </a>
-        <a href="#">
-        <i class="fa fa-instagram fa-4x"></i>
-        </a>
-    </section>
-  </section>
-
-  <section class="contact">
-    <h3>Personal Contact</h3>
-    <section class="social-list">
-
-      <a href="#">
-        <i class="fa fa-envelope-square fa-4x"></i>
-        </a>
-        <a href="#">
-        <i class="fa fa-skype fa-4x"></i>
-        </a>
-    </section>
-  </section>
-  </footer>
-
-
-  -->
 
   <footer>
 
-
   <hr>
 	  	<ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-        <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-	      <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li> <a href="https://www.instagram.com/jogwad_village/"><i class="fa fa-instagram"></i></a></li>
+	      <li> <a href="https://www.facebook.com/Jogwad.Village/"><i class="fa fa-facebook"></i></a></li>
         <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
-        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li> <a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        <li> <a href="https://twitter.com/Jogwad_Village"><i class="fa fa-twitter"></i></a></li>
+      	<section class="footer_copyright">
+          <i class="fa fa-copyright">Soyeb Patel</i>
+        </section>
 
-	  	</ul>
-
+		</ul>
+        
 	  	<hr />
 
     </footer>
 
+
+    <!--
+
+    <div class="marquee">
+      <div class="img1">Soyeb Patel</div>
+      </div>
+
+    -->
   <!--
 <footer class="footer_gj">
   <div class="mobile-footer">
