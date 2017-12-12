@@ -50,10 +50,6 @@ header a {
 
 }
 
-#india_time {
-
-}
-
 
 .page_title {
 	font-size: 20px;
@@ -158,8 +154,35 @@ nav {
 
 .top-home-section {
 	border: solid 5px;
-
 }
+
+#typedtext {
+	
+	font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:30px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;
+	
+}
+
+.top-home-section p {
+animation:1s ease 2s normal forwards 1 fadein;
+-webkit-animation:1s ease 2s normal forwards 1 fadein;
+opacity:0
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+
+
+
 
 /* Gallery middle of home page */
 
@@ -305,33 +328,47 @@ nav {
 }
 
 
-.clock_time {
+/* Clock */ 
+
+
+
+
+.main_time {
   border: 5px solid;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   height: 100%;
-  display: flex;
+
+}
+
+/* First Clock CSS */
+.first_clock {
+	display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
 }
-.jogwad_time {
+
+.time_detail {
   font-size: 28px;
   font-weight: bold;
   
 }
 
-.text_box_clock {
-	width: 50%;
-}
-
 
 .text_box_clock p{
 	font-size: 20px;
-
-	
 }
+
+/* Second Clock CSS */
+.second_clock {
+display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 /* SVG Clock */
 
@@ -467,13 +504,18 @@ footer {
 	display: flex;
 	align-items: center;
     justify-content: center;
+	border-top:2px solid #1C1E26 ;
+	border-bottom:2px solid #38404D;
+	
+	margin-top: 10px;
 }
 
 hr{
+	
 	margin: 30px 20px;
-	border-top:2px solid #1C1E26 ;
-	border-bottom:2px solid #38404D;
-	float: none;
+	
+	
+	
 	
 }
 

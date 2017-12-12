@@ -15,7 +15,6 @@ handsE.secondE = (dtgE.getSeconds() + dtgE.getMilliseconds() / 1000) / 60;
 handsE.minuteE = (dtgE.getMinutes() + handsE.secondE) / 60 ;
 handsE.hourE = (dtgE.getHours() % 12 + handsE.minuteE) / 12;
 
-console.log(handsE.secondE,handsE.minuteE,handsE.hourE );
 
 for (key in handsE) {
   document.getElementById(key).setAttribute('transform', "rotate(" + (handsE[key] * 360) + ")");
