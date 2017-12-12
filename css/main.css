@@ -9,6 +9,17 @@
 Adding Shadow to headers
 https://codepen.io/juanbrujo/pen/yGpAK
 
+
+https://stackoverflow.com/questions/29846224/css-animation-with-delay-and-opacity
+Typewriter effect
+
+
+
+https://codepen.io/charlespeters/pen/QNKmpQ
+Loading circle SVG
+
+https://codepen.io/JavaScriptErika/pen/GvPyMG
+Hamburger Loading SVG
 */
 
 /*
@@ -23,6 +34,7 @@ body {
  /* background-image: url("../images/village/hilltop.png"); */
   border: 10px;
   border-radius: 20px;
+  
 
 }
 
@@ -122,27 +134,35 @@ nav {
 
 
 
-/* Car Animation
-
-.fa fa-car {
-
-}
-#moveCar {
-    position: relative;
-    animation-name: carMoving;
-    animation-duration: 10s;
-    margin: 0;
+/* Loading circles */
+@keyframes loading {
+  100% { r: 15; }
 }
 
-@keyframes carMoving {
-    0%   {left:0px; top:0px;}
-    25%  { left:200px; top:0px;}
-    50%  { left:200px; top:200px;}
-    75%  { left:0px; top:200px;}
-    100% { left:50%; top:50%;}
+.container {
+  width: 100%;
+  position: relative;
+  background: #FFC107;
+  color: #FFECB3;
 }
 
-*/
+.child {
+  max-width: 12rem;
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
+}
+
+.circle-1 { animation: loading 1.25s  }
+.circle-2 { animation: loading 1.25s .3125s; }
+.circle-3 { animation: loading 1.25s .625s; }
+
+
+
+
+
 
 
 /* Main Section */
@@ -154,11 +174,15 @@ nav {
 
 .top-home-section {
 	border: solid 5px;
+	display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #typedtext {
 	
-	font-family: 'Waiting for the Sunrise', cursive; 
+font-family: 'Waiting for the Sunrise', cursive; 
   font-size:30px; 
   margin: 10px 50px; 
   letter-spacing: 6px; 
@@ -168,7 +192,7 @@ nav {
 
 .top-home-section p {
 animation:1s ease 2s normal forwards 1 fadein;
--webkit-animation:1s ease 2s normal forwards 1 fadein;
+animation:1s ease 2s normal forwards 1 fadein;
 opacity:0
 }
 
@@ -190,7 +214,18 @@ to{opacity:1}
 	width: 100%;
 	height: auto;
 
+	animation:1s ease 2s normal forwards 1 fadein;
+animation:1s ease 2s normal forwards 1 fadein;
+opacity:0
 }
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
 
 .photos-middle-of-page img{
 	max-width:44%;
@@ -243,7 +278,9 @@ to{opacity:1}
 
 	width: 100%;
 	height: auto;
-
+animation:1s ease 2s normal forwards 1 fadein;
+animation:1s ease 2s normal forwards 1 fadein;
+opacity:0
 
 }
 
@@ -253,12 +290,26 @@ to{opacity:1}
 	border: solid 5px;
   margin-bottom: 10px;
 
+  @keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
 }
 
 
 .history_in_home {
 	border-radius: 10px;
 	border: solid 5px;
+	@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
 }
 
 .other_page_info p {
@@ -318,6 +369,12 @@ to{opacity:1}
 
 
 
+.map_home {
+	
+	animation:1s ease 2s normal forwards 1 fadein;
+animation:1s ease 2s normal forwards 1 fadein;
+opacity:0
+}
 
 #map {
   height: 600px;
@@ -325,6 +382,14 @@ to{opacity:1}
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 15px;
+  
+  @keyframes fadein {from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
 }
 
 
@@ -338,8 +403,13 @@ to{opacity:1}
   width: 90%;
   margin: 0 auto;
   height: 100%;
+	animation:1s ease 2s normal forwards 1 fadein;
+animation:1s ease 2s normal forwards 1 fadein;
+opacity:0
 
 }
+	
+
 
 /* First Clock CSS */
 .first_clock {
@@ -347,6 +417,13 @@ to{opacity:1}
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  @keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
 }
 
 .time_detail {
@@ -366,6 +443,13 @@ display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
 }
 
 
