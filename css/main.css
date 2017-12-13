@@ -27,6 +27,15 @@ Hamburger Loading SVG
 Cool effect with CSS and SVG
 https://codepen.io/yoksel/pen/XJbzrO
 
+
+
+https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/
+Cool CSS effects/animation
+
+
+https://codepen.io/ashleynolan/pen/wBppKz
+Toggle Buttons
+
 */
 
 
@@ -34,7 +43,7 @@ body {
  /* background-image: url("../images/village/hilltop.png"); */
   border: 10px;
   border-radius: 20px;
-  
+
 
 }
 
@@ -100,7 +109,7 @@ nav {
 #nav-menu {
 	position: relative;
 	top: -19px;
-	
+
 }
 
 #nav-menu li{
@@ -117,9 +126,6 @@ nav {
 	width: 100%;
 }
 
-
-
-
 /* Navigation Javascript*/
 
 #nav-menu {
@@ -131,38 +137,9 @@ nav {
 
 }
 
-
-
-
-/* Loading circles */
-@keyframes loading {
-  100% { r: 15; }
-}
-
-.container {
-  width: 100%;
-  position: relative;
-  background: #FFC107;
-  color: #FFECB3;
-}
-
 .child {
-  max-width: 12rem;
-  padding: 1rem;
-  width: 100%;
-  margin: auto;
-  top: 0; bottom: 0; left: 0; right: 0;
-  position: absolute;
+  display: none;
 }
-
-.circle-1 { animation: loading 1.25s  }
-.circle-2 { animation: loading 1.25s .3125s; }
-.circle-3 { animation: loading 1.25s .625s; }
-
-
-
-
-
 
 
 /* Main Section */
@@ -181,13 +158,13 @@ nav {
 }
 
 #typedtext {
-	
-font-family: 'Waiting for the Sunrise', cursive; 
-  font-size:30px; 
-  margin: 10px 50px; 
-  letter-spacing: 6px; 
+
+font-family: 'Waiting for the Sunrise', cursive;
+  font-size:30px;
+  margin: 10px 50px;
+  letter-spacing: 6px;
   font-weight: bold;
-	
+
 }
 
 .top-home-section p {
@@ -211,10 +188,10 @@ to{opacity:1}
 /* Gallery middle of home page */
 
 .photos-middle-of-page {
-	width: 100%;
-	height: auto;
+width: 100%;
+height: auto;
 
-	animation:1s ease 2s normal forwards 1 fadein;
+animation:1s ease 2s normal forwards 1 fadein;
 animation:1s ease 2s normal forwards 1 fadein;
 opacity:0
 }
@@ -232,6 +209,17 @@ to{opacity:1}
 	height: auto;
   margin-left: 14px;
   border-radius: 5px;
+}
+
+.photos-middle-of-page p {
+display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.photos-middle-of-page img:hover{
+  border-radius: 50%;
 }
 
 
@@ -370,7 +358,7 @@ to{opacity:1}
 
 
 .map_home {
-	
+
 	animation:1s ease 2s normal forwards 1 fadein;
 animation:1s ease 2s normal forwards 1 fadein;
 opacity:0
@@ -382,7 +370,7 @@ opacity:0
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 15px;
-  
+
   @keyframes fadein {from{opacity:0}
 to{opacity:1}
 }
@@ -393,7 +381,7 @@ to{opacity:1}
 }
 
 
-/* Clock */ 
+/* Clock */
 
 
 
@@ -408,7 +396,7 @@ animation:1s ease 2s normal forwards 1 fadein;
 opacity:0
 
 }
-	
+
 
 
 /* First Clock CSS */
@@ -429,7 +417,7 @@ to{opacity:1}
 .time_detail {
   font-size: 28px;
   font-weight: bold;
-  
+
 }
 
 
@@ -580,7 +568,7 @@ line {
 /*  Weather Api */
 
 
-/* Try to make footer stay at bottom even 
+/* Try to make footer stay at bottom even
 if there is less content */
 
 footer {
@@ -590,17 +578,17 @@ footer {
     justify-content: center;
 	border-top:2px solid #1C1E26 ;
 	border-bottom:2px solid #38404D;
-	
+
 	margin-top: 10px;
 }
 
 hr{
-	
+
 	margin: 30px 20px;
-	
-	
-	
-	
+
+
+
+
 }
 
 .list-unstyled {
@@ -685,6 +673,8 @@ hr{
 
 
 
+
+
 /* Jogwad Information Page */
 
 .population_info:hover{
@@ -708,24 +698,103 @@ hr{
 	transform: scale(0.9);
 }
 
+/* Info Page Images */
 
-/*
+.photos-middle-of-page_2 {
+width: 100%;
+height: auto;
+}
+.photos-middle-of-page_2 p {
+display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
-    z-index: 2;
-    -webkit-
-    -webkit-transform: scale(1.5);
-    -ms-
-    -ms-transform: scale(1.5);   
-    -moz-transition: all 200ms ease-in;
-    -moz-
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
-*/
+
+
+.photos-middle-of-page_2 img{
+	max-width:44%;
+	height: auto;
+  margin-left: 14px;
+  border-radius: 5px;
+}
+
+.photos-middle-of-page_2 img:hover{
+  border-radius: 50%;
+}
+
+/* Styling a tags to go to gallery */
+
+
+
+.link_to_gallery {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: default;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	transition: all 0.3s;
+	transition: all 0.3s;
+	
+}
+
+.link_to_gallery a:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.5s;
+	transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+/* Button 1e */
+.link_to_gallery {
+	overflow: hidden;
+}
+.link_to_gallery a:after {
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: darkgreen;
+	opacity: 0;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.link_to_gallery a:hover,
+.link_to_gallery a:active {
+	color: #0e83cd;
+}
+
+.link_to_gallery a:hover:after {
+	height: 200%;
+	opacity: 1;
+}
+
+.link_to_gallery a:active:after {
+	height: 200%;
+	opacity: 1;
+}
+
+
 
 
 /* Family Lineage with JS */
-
-
 
 button.accordion {
     background-color: #eee;
@@ -742,18 +811,32 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ccc; 
+    background-color: #ccc;
 }
 
 section.panel {
     padding: 0 18px;
     display: none;
    background-color: #34495e;
-  
+
 }
 
 
-/*    */
+/* End Family Lineage */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -770,7 +853,29 @@ section.panel {
   body {
   background: green;
 
-  }
+}
+
+/* Loading circles */
+@keyframes loading {
+  100% { r: 15; }
+}
+
+.child {
+  display: inline-block;
+  visibility: visible;
+  max-width: 12rem;
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
+}
+
+.circle-1 { animation: loading 1.25s  }
+.circle-2 { animation: loading 1.25s .3125s; }
+.circle-3 { animation: loading 1.25s .625s; }
+
+
 
 }
 /* END FIRST BREAKPOINT */
@@ -787,5 +892,7 @@ section.panel {
   body {
   background: aqua;
   }
+
+
 
 }
