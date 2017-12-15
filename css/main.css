@@ -43,7 +43,7 @@ body {
  /* background-image: url("../images/village/hilltop.png"); */
   border: 10px;
   border-radius: 20px;
-
+  background-color: white;
 
 }
 
@@ -155,6 +155,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 #typedtext {
@@ -209,6 +210,9 @@ to{opacity:1}
 	height: auto;
   margin-left: 14px;
   border-radius: 5px;
+  transition: all 0.7s ease;
+transition: all 0.7s ease;
+
 }
 
 .photos-middle-of-page p {
@@ -220,6 +224,8 @@ display: flex;
 
 .photos-middle-of-page img:hover{
   border-radius: 50%;
+  transform:scale(0.9);
+	transform:scale(0.9);
 }
 
 
@@ -268,7 +274,7 @@ display: flex;
 	height: auto;
 animation:1s ease 2s normal forwards 1 fadein;
 animation:1s ease 2s normal forwards 1 fadein;
-opacity:0
+opacity:0;
 
 }
 
@@ -277,6 +283,7 @@ opacity:0
 	border-radius: 10px;
 	border: solid 5px;
   margin-bottom: 10px;
+    padding: 5px;
 
   @keyframes fadein{from{opacity:0}
 to{opacity:1}
@@ -291,6 +298,8 @@ to{opacity:1}
 .history_in_home {
 	border-radius: 10px;
 	border: solid 5px;
+	margin-bottom: 10px;
+	  padding: 5px;
 	@keyframes fadein{from{opacity:0}
 to{opacity:1}
 }
@@ -346,6 +355,13 @@ to{opacity:1}
   left: 25px;
 }
 
+.showhide2{
+	
+	font-size:22px;
+	padding: 5px;
+
+}
+
 .answer,
 .answer p {
   height: 0;
@@ -353,37 +369,14 @@ to{opacity:1}
   transition: all 0.5s;
   overflow: hidden;
 }
-/* CSS only show hide */
+/* CSS only show hide Ends */
 
 
 
-.map_home {
 
-	animation:1s ease 2s normal forwards 1 fadein;
-animation:1s ease 2s normal forwards 1 fadein;
-opacity:0
-}
-
-#map {
-  height: 600px;
-  width: 85%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  border-radius: 15px;
-
-  @keyframes fadein {from{opacity:0}
-to{opacity:1}
-}
-
-@keyframes fadein{from{opacity:0}
-to{opacity:1}
-}
-}
 
 
 /* Clock */
-
-
 
 
 .main_time {
@@ -395,6 +388,14 @@ to{opacity:1}
 animation:1s ease 2s normal forwards 1 fadein;
 opacity:0
 
+}
+
+.main_time h3, p {
+	  padding: 5px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  
 }
 
 
@@ -565,11 +566,7 @@ line {
 
 
 
-/*  Weather Api */
 
-
-/* Try to make footer stay at bottom even
-if there is less content */
 
 footer {
 	width: 100%;
@@ -578,16 +575,12 @@ footer {
     justify-content: center;
 	border-top:2px solid #1C1E26 ;
 	border-bottom:2px solid #38404D;
-
 	margin-top: 10px;
 }
 
 hr{
 
-	margin: 30px 20px;
-
-
-
+	display: none;
 
 }
 
@@ -603,9 +596,6 @@ hr{
 	margin-bottom: 10px;
 }
 
-.social-icons {
-
-}
 
 .social-icons .fa {
 	font-size: 2em;
@@ -657,11 +647,16 @@ hr{
 .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
 
 
+.footer_copyright {
+	margin-left: 10px;
+}
+
 
 .footer_copyright .fa{
 	box-shadow: none;
 	width: auto;
 	color: gray;
+	
 }
 .footer_copyright .fa:hover {
 	box-shadow: 2px 2px 3px #333;
@@ -677,11 +672,20 @@ hr{
 
 /* Jogwad Information Page */
 
+.population_info, .facilties_info, .nearby_info h2, p{
+	padding: 10px;
+	
+	
+}
+
+
 .population_info:hover{
 	box-shadow: 0px 0px 150px #000000;
 	transition: all 200ms ease-in;
 	font-size: 26px;
 	transform: scale(0.9);
+
+	
 }
 
 .facilties_info:hover{
@@ -697,6 +701,36 @@ hr{
 	font-size: 26px;
 	transform: scale(0.9);
 }
+
+
+/* Map */
+
+.map_jogwad {
+	animation:1s ease 2s normal forwards 1 fadein;
+	animation:1s ease 2s normal forwards 1 fadein;
+	opacity:0
+}
+
+#map {
+  height: 600px;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  
+}
+  @keyframes fadein {from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+}
+
+ <script src="javascript/map.js"></script>
+
+
 
 /* Info Page Images */
 
@@ -807,13 +841,18 @@ button.accordion {
     outline: none;
     font-size: 15px;
     transition: 1s;
+	
+	
+	/* Doesnt work when image is in own folder
+	background-image: url(../images/icons/escheresque.png");
 	background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
+	*/
 }
 
 button.accordion.active, button.accordion:hover {
     background-color: #ccc;
+	
 }
-
 section.panel {
     padding: 0 18px;
     display: none;
@@ -822,21 +861,100 @@ section.panel {
 }
 
 
-/* End Family Lineage */
+
+/* Gallery */
+/*
+
+.gallery_container {
+width: 100%;
+height: auto;
+border: 5px solid;
+
+}
 
 
+.gallery_container img{
+	
+	max-width:25%;
+	height: auto;
+}
 
 
+.my_slides li {
+	list-style-type: none;
+}
+*/
 
+#image-slider {
+  margin: 100px auto;
+  width: 500px;
+}
 
+#navigation {
+  margin: 5px 0 0 0;
+  text-align: center;
+  z-index: 10;
+}
 
+#navigation a {
+  text-decoration: none;
+  background: #003C72;
+  padding: 2px 6px;
+  color: #FFFFFF;
+  display: inline-block;
+}
 
+#navigation a:hover {
+  background: #0182C4;
+}
 
+#slides {
+  height: 1080px;
+  width: 1080px;;
+  overflow: hidden;
+  position: relative;
+  margin-left: -200px;
+}
 
+#slides img {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  
+}
 
+#slides img {
+  z-index: 1;
+  opacity: 0;
+  /* animation */
+  transition: all linear 400ms;
+  -o-transition: all linear 400ms;
+  -moz-transition: all linear 400ms;
+  -webkit-transition: all linear 400ms;
+}
 
+#slides div {
+  display: none;
+  position: fixed;
+}
 
+#slides div:target + img {
+  left: 0;
+  z-index: 5;
+  opacity: 1;
+}
 
+#slides img.default {
+  left: 0;
+  z-index: 5;
+  opacity: 1;
+}
+
+#slides div:target ~ img.default {
+  z-index: 1;
+  opacity: 0;
+  left: -500px;
+}
 
 
 
@@ -875,9 +993,9 @@ section.panel {
 .circle-2 { animation: loading 1.25s .3125s; }
 .circle-3 { animation: loading 1.25s .625s; }
 
-
-
 }
+
+
 /* END FIRST BREAKPOINT */
 
 

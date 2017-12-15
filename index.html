@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" type="text/css"/
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" type="text/css">
 
   </head>
 <!--
@@ -75,8 +75,7 @@ Try adding a cross to the hamburger_menu
     <nav>
       <ul id="nav-menu">
         <li> <a href="index.html">Home</a> </li>
-        <li> <a href="history.html">Jogwad Infromation</a> </li>
-        <li><a href="development.html">Development</a> </li>
+        <li> <a href="history.html">Infromation</a> </li>
         <li><a href="gallery.html">Gallery</a> </li>
       </ul>
     </nav>
@@ -129,7 +128,8 @@ Try adding a cross to the hamburger_menu
       <!-- these photos will appear under each other in mobile mode
       The photos will have link to either the
     -->
-	<img src="images/masjid/masjid_far.png" alt=""> <img src="images/masjid/masjid_umar_entrance.png" alt="">
+	<img src="images/masjid/masjid_far.png" alt=""> 
+	<img src="images/masjid/masjid_umar_entrance.png" alt="">
       <p class="link_to_gallery"><a href="gallery.html"> Gallery </a> </p>
     </section>
 
@@ -138,7 +138,7 @@ Try adding a cross to the hamburger_menu
 <!-- Try making the whole h3 clickable -->
 
       <section class="development_in_home">
-        <h3 class="showhide2"> Development Brief </h3>
+        <label for="showhide1" class="showhide2"> Development Brief </label>
 	    <input class="showhide_input_button" type="checkbox" id="showhide1">
         <p class="answer">This text will come in</p>
 
@@ -148,7 +148,7 @@ Try adding a cross to the hamburger_menu
 
 
       <section class="history_in_home">
-        <h3 class="showhide2"> History Brief </h3>
+        <label for="showhide2" class="showhide2"> History Brief </label>
 	    <input class="showhide_input_button" type="checkbox" id="showhide2">
         <p class="answer"> Animate how the text in here appears.  </p>
       </section>
@@ -156,13 +156,6 @@ Try adding a cross to the hamburger_menu
 	</section>
 
 
-
-    <section class="map_home">
-      <h2> Visit Jogwad </h2>
-
-    <section id="map">
-    </section>
-</section>
 
     <section class="main_time">
 
@@ -261,7 +254,7 @@ Try adding a cross to the hamburger_menu
   </div>
 </section>
 <section class="development_in_home">
-  <h3> Development Brief </h3>
+  <h3> Development Brief </h3>escheresque.png
   <p> Over here I am going to be grabbing couple of the first lines from the development news page </p>
 </section>
 <section class="history_in_home">
@@ -302,13 +295,14 @@ Try adding a cross to the hamburger_menu
 	      <li> <a href="https://www.facebook.com/Jogwad.Village/"><i class="fa fa-facebook"></i></a></li>
         <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
         <li> <a href="https://twitter.com/Jogwad_Village"><i class="fa fa-twitter"></i></a></li>
-      	<section class="footer_copyright">
+      	<li class="footer_copyright">
           <i class="fa fa-copyright">Soyeb Patel</i>
-        </section>
+        </li>
 
 		</ul>
 
 	  	<hr />
+		
 
     </footer>
 
@@ -337,9 +331,8 @@ Try adding a cross to the hamburger_menu
   <script src="javascript/map.js"></script>
   <script src="javascript/svg_clock.js"></script>
   <script src="javascript/typewriter.js"></script>
-
-
   <script src="javascript/england_svg_clock.js"></script>
+  
   <!--
   <script src="javascript/india_clock.js"> </script>
 -->
@@ -347,10 +340,7 @@ Try adding a cross to the hamburger_menu
 
 
 
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsgUVH_fnShwOVk_T1DupXMsmCTLp7sUc&callback=initMap">
-</script>
-
+  
 
 
 </body>

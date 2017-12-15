@@ -2,33 +2,73 @@
 <html>
 <head>
   <title>Jogwad</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/responsive.css" type="text/css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" type="text/css"/>
+
+  </head>
 
 <!-- 
+
+https://codepen.io/peternakblog/pen/zGwoOQ
+Add this animation on the page. Its like dark night time
+
+
+https://codepen.io/dudleystorey/pen/XJWqgz
+Images shown at top. When clicked bigger image is shown underneath
+
 
 https://codepen.io/chriscoyier/pen/QKYvNo
 Image Slider
 
+
+https://codepen.io/nebo/pen/ONXejO
+All images shown. If click it gets bigger with other images opacity lowered
+
+
+https://codepen.io/clagom/pen/albmD
+Really slick gallery, bit complex to use for users
+
+
+https://codepen.io/lu-kanemon/pen/gpydpa
+Simple gallery 
+
+
+https://codepen.io/imelgrat/pen/epBEZz
+3D type of gallery.
+
+
+
+
+https://codepen.io/TimWilliams614/pen/qbamxj
+
+
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox
+USED this for gallery
+
 -->
 
 <body>
-
-   <header>
+<header>
     <h1 class="header_title"> Jogwad </h1>
+    <!-- Doesnt work to 5 hours 30 mins
+    <p id="clock"></p>
+  -->
     <form class="language_options">
       <select name="language_dropdown" id="language_button">
         <option value="change_to_english" selected>English </option>
         <option value="change_to_gujrati">Gujrati</option>
       </select>
-    </form> <a href="index.html" class="page_title"> Home </a>
+    </form>
+    <a href="index.html" class="page_title"> Home </a>
+
 	<a href="#" id="navBtn">&#x2630;</a>
     <nav>
       <ul id="nav-menu">
         <li> <a href="index.html">Home</a> </li>
-        <li> <a href="history.html">History</a> </li>
-        <li><a href="development.html">Development</a> </li>
+        <li> <a href="history.html">Infromation</a> </li>
         <li><a href="gallery.html">Gallery</a> </li>
       </ul>
     </nav>
@@ -50,21 +90,91 @@ Image Slider
 
 
   -->
+  
+  
+  <main>
+  
+<!--
+  <section class="gallery_container">
+  
+  <ul class="my_slides"> 
+	<li class="numbertext"><img src="images/hospital/hospital_side.png" alt=""></li>
+	<li class="numbertext"><img src="images/hospital/hospital_side.png" alt=""></li>
+	<li class="numbertext"><img src="images/hospital/hospital_side.png" alt=""></li>
+	<li class="numbertext"><img src="images/hospital/hospital_side.png" alt=""></li>
+	<li class="numbertext"><img  src="images/hospital/hospital_side.png" alt=""></li>
+  </ul>
+	
+  </ul>
+  </section>
+
+	
+	
+<section class="gallery_container">
+  <ul class="small_gallery_icons">
+    <li><a href="#pic1"><img alt="" src="images/hospital/hospital_side.png" /></a></li>
+    <li><a href="#pic2"><img alt="" src="images/hospital/hospital_side.png" /></a></li>
+    <li><a href="#pic3"><img alt="" src="images/hospital/hospital_side.png" /></a></li>
+    <li><a href="#pic4"><img alt="" src="images/hospital/hospital_side.png" /></a></li>
+    <li><a href="#pic5"><img alt="" src="images/hospital/hospital_side.png" /></a></li>
+  </ul>
+  <div class="full-picture">
+    <div><a name="pic1"></a><img alt="" src="images/hospital/hospital_side.png" /></div>
+    <div><a name="pic2"></a><img alt="" src="images/hospital/hospital_side.png" /></div>
+    <div><a name="pic3"></a><img alt="" src="images/hospital/hospital_side.png" /></div>
+    <div><a name="pic4"></a><img alt="" src="images/hospital/hospital_side.png" /></div>
+    <div><a name="pic5"></a><img alt="" src="images/hospital/hospital_side.png" /></div>
+  </div>
+</div>
+  -->
+  
+  <div id="image-slider">
+  <div id="slides">
+    <div id="slide1"></div>
+    <img src="images/hospital/hospital_side.png" alt="" />
+    <div id="slide2"></div>
+    <img src="images/hospital/hospital_side.png" alt="" />
+    <div id="slide3"></div>
+    <img src="images/hospital/hospital_side.png" alt="" />
+    <div id="slide4"></div>
+    <img src="images/hospital/hospital_side.png" alt="" />
+    <div id="slide5"></div>
+    <img src="images/hospital/hospital_side.png" alt="" />
+  </div>
+  <div id="navigation">
+    <a href="#slide1">1</a>
+    <a href="#slide2">2</a>
+    <a href="#slide3">3</a>
+    <a href="#slide4">4</a>
+    <a href="#slide5">5</a>
+  </div>
+</div>
+
+  
+
+
+ 
+  </main>
 
 
 
+  <footer>
 
-  <footer class="footer">
-    <div class="mobile-footer">
-      <p> Soyeb277@gmail.com - Default Email provider will load up</p>
-      <p> Mobile number </p>
-      <p> Copyright </p>
-    </div>
-    <div class="desktop-footer">
-      <p> Icons will have link to go on website- FB - Instagram - Twitter - Wikipedia </p>
-      <p> Accessibility Buttons - Make text Bigger - Background goes black </p>
-    </div>
-  </footer>
+  <hr>
+	  	<ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+        <li> <a href="https://www.instagram.com/jogwad_village/"><i class="fa fa-instagram"></i></a></li>
+	      <li> <a href="https://www.facebook.com/Jogwad.Village/"><i class="fa fa-facebook"></i></a></li>
+        <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li> <a href="https://twitter.com/Jogwad_Village"><i class="fa fa-twitter"></i></a></li>
+      	<li class="footer_copyright">
+          <i class="fa fa-copyright">Soyeb Patel</i>
+        </li>
+		</ul>
+
+	  	<hr />
+
+    </footer>
+
 
 
 
@@ -85,6 +195,7 @@ Image Slider
   -->
 
   <script src="javascript/hamburger_menu.js"></script>
+  <script src="javascript/carousel.js></script>
 
 
 </body>
