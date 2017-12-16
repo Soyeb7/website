@@ -6,22 +6,19 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" type="text/css"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
   </head>
 
 <!--
-
 https://codepen.io/peternakblog/pen/zGwoOQ
 Add this animation on the page. Its like dark night time
-
 
 https://codepen.io/dudleystorey/pen/XJWqgz
 Images shown at top. When clicked bigger image is shown underneath
 
-
 https://codepen.io/chriscoyier/pen/QKYvNo
 Image Slider
-
 
 https://codepen.io/nebo/pen/ONXejO
 All images shown. If click it gets bigger with other images opacity lowered
@@ -95,7 +92,6 @@ USED this for gallery
   <main>
 
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400ital ic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
   <!-- The Timeline -->
 <section class="timeline_section">
@@ -152,8 +148,8 @@ USED this for gallery
 </section>
 
 <form id="contact" method="post">
-  <h3>CONTACT US</h3>
-  <h4>Drop us a line, and we'll be in touch.</h4>
+  <h3>Send us your feedback</h3>
+  <h4>Let us know what you think of this website and Jogwad</h4>
   <fieldset>
     <input placeholder="First Name*" type="text" tabindex="1" required>
   </fieldset>
@@ -161,17 +157,21 @@ USED this for gallery
     <input placeholder="Last Name*" type="text" tabindex="2" required>
   </fieldset>
   <fieldset>
-    <input placeholder="Company*" type="text" tabindex="3" required>
-  </fieldset>
-  <fieldset>
-    <input placeholder="Title" type="tel" tabindex="4" required>
-  </fieldset>
-  <fieldset>
-  <input placeholder="Phone Number" type="tel" tabindex="5" required>
+  <input placeholder="Phone Number" type="tel" tabindex="5">
   </fieldset>
   <fieldset>
   <input placeholder="Your Email Address*" type="email" tabindex="6" required>
   </fieldset>
+
+  <fieldset>
+    <textarea class="feedback" placeholder="Please leave feedback*" required></textarea>
+  </fieldset>
+
+
+
+<!--
+  <textarea placeholder="Feedback*" required>Please leave your feedback</textarea>
+-->
   <h4>*Indicates a required field</h4>
     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
 </form>
@@ -179,8 +179,6 @@ USED this for gallery
 
 
   </main>
-
-
 
   <footer>
 
@@ -219,7 +217,8 @@ USED this for gallery
   -->
 
   <script src="javascript/hamburger_menu.js"></script>
-  <script src="javascript/carousel.js"></script>
+
+
 
 
 </body>
