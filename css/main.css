@@ -43,9 +43,42 @@ body {
  /* background-image: url("../images/village/hilltop.png"); */
   border: 10px;
   border-radius: 20px;
-  background-color: white;
-
+  height: 100%;
 }
+.parallax1{
+  background-image:url("../images/village/road.png");
+  position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.parallax2{
+  background-image:url("../images/village/hilltop.png");
+  position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.parallax3{
+  background-image:url("../images/village/sunset.png");
+  position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 
 header{
 	background-color: red;
@@ -673,6 +706,29 @@ hr{
 
 /* Jogwad Information Page */
 
+.parallax1_info{
+  background-image:url("../images/village/tunnel.png");
+  position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.parallax2_info{
+  background-image:url("../images/village/ambika_river2.jpg");
+  position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .population_info, .facilties_info, .nearby_info h2, p{
 	padding: 10px;
 
@@ -1126,7 +1182,7 @@ fieldset {
 
 
 .feedback {
-    height:100px;
+    height:150px;
     max-width:100%;
     resize:none;
 }
