@@ -35,30 +35,25 @@ Simple gallery
 https://codepen.io/imelgrat/pen/epBEZz
 3D type of gallery.
 
-
-
-
 https://codepen.io/TimWilliams614/pen/qbamxj
-
-
 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox
 USED this for gallery
 
 -->
 
+
 <body>
-<header>
+
+  <!-- Parallax 1 starts -->
+  <section class="parallax1">
+
+    <header>
     <h1 class="header_title"> Jogwad </h1>
     <!-- Doesnt work to 5 hours 30 mins
     <p id="clock"></p>
   -->
-    <form class="language_options">
-      <select name="language_dropdown" id="language_button">
-        <option value="change_to_english" selected>English </option>
-        <option value="change_to_gujrati">Gujrati</option>
-      </select>
-    </form>
+
     <a href="about.html" class="page_title"> About Us </a>
 
 	<a href="#" id="navBtn">&#x2630;</a>
@@ -71,27 +66,7 @@ USED this for gallery
     </nav>
   </header>
 
-  <!--
-  <header class="navbar_header_gj">
-    <h1> Jogwad </h1>
-    <nav class="navbar">
-        <h4> Gallery </h4>
-      <ul>
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="history.html">History</a></li>
-        <li><a href="development.html">Development</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  -->
-
-
-
   <main>
-
-
 
   <!-- The Timeline -->
 <section class="timeline_section">
@@ -100,7 +75,6 @@ USED this for gallery
 
   	<!-- Item 1 -->
   	<li>
-
   		<section class="direction-r">
   			<section class="flag-wrapper">
   				<span class="flag">School gains recognition</span>
@@ -110,8 +84,12 @@ USED this for gallery
         amount of success and help it has provided to the students</section>
   		</section>
   	</li>
-
   	<!-- Item 2 -->
+  </section>
+  <!-- First parallax ends -->
+
+  <!-- Second parallax begins -->
+  <section class="parallax2">
   	<li>
   		<section class="direction-l">
   			<section class="flag-wrapper">
@@ -121,7 +99,6 @@ USED this for gallery
   			<section class="desc">The village has progressed alot. </section>
   		</section>
   	</li>
-
   	<!-- Item 3 -->
   	<li>
   		<section class="direction-r">
@@ -143,11 +120,14 @@ USED this for gallery
   			<section class="desc">The village is founded by Kasamjee Desai. </section>
   		</section>
   	</li>
+  </section>
+  <!-- paralax 2 ends -->
 
   </ul>
-</section>
 
 <form id="contact" method="post">
+  <!-- Third parallax begins -->
+  <section class="parallax3">
   <h3>Send us your feedback</h3>
   <h4>Let us know what you think of this website and Jogwad</h4>
   <fieldset>
@@ -167,19 +147,13 @@ USED this for gallery
     <textarea class="feedback" placeholder="Please leave feedback*" required></textarea>
   </fieldset>
 
-
-
 <!--
   <textarea placeholder="Feedback*" required>Please leave your feedback</textarea>
 -->
   <h4>*Indicates a required field</h4>
     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
 </form>
-
-
-
   </main>
-
   <footer>
 
   <hr>
@@ -192,34 +166,13 @@ USED this for gallery
           <i class="fa fa-copyright">Soyeb Patel</i>
         </li>
 		</ul>
-
 	  	<hr />
-
     </footer>
 
-
-
-
-  <!--
-  <footer class="footer">
-    <section class="mobile-footer">
-      <p> Soyeb277@gmail.com - Default Email provider will load up</p>
-      <p> Mobile number </p>
-      <p> Copyright </p>
-    </section>
-    <section class="desktop-footer">
-      <p> Icons will have link to go on website- FB - Instagram - Twitter - Wikipedia </p>
-      <p> Accessibility Buttons - Make text Bigger - Background goes black </p>
-    </section>
-  </footer>
-
-
-  -->
+<!-- Third paralax ends -->
+</section>
 
   <script src="javascript/hamburger_menu.js"></script>
-
-
-
 
 </body>
 
