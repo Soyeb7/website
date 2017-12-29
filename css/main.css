@@ -245,34 +245,7 @@ to{opacity:1}
 /* Code for Desktop to make the news appear next to each other in blocks */
 
 /*
-.other_page_info {
 
-width: 100%;
-border: 5px solid;
-height: auto;
-
-}
-
-.development_in_home {
-border-radius: 10px;
-border: solid 5px;
-max-width: 48%;
-height: auto;
-display: inline-block;
-margin: 10px;
-
-}
-
-
-.history_in_home {
-border-radius: 10px;
-border: solid 5px;
-max-width: 48%;
-height: auto;
-display: inline-block;
-margin: 10px;
-
-}
 */
 
 .other_page_info {
@@ -667,6 +640,22 @@ hr{
   color: black;
 
 }
+
+footer h3 {
+  color: brown;
+  font-size: 26px;
+}
+
+.sitemap {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sitemap:hover {
+  color: black;
+}
+
 
 
 
@@ -1202,11 +1191,6 @@ fieldset {
 
 /* Form ends */
 
-
-
-
-
-
 @media screen and (min-width: 650px) {
   /*
   - applies to screens larger than 650px (unless specifically overwritten these styles will also apply to screens larger than 999px)
@@ -1217,9 +1201,38 @@ fieldset {
   - add `display: inline-block;` so that sections will float next to each other
   */
 
-  body {
-    background: green;
+  .parallax1{
+    background-image:url("../images/school/school_side.jpg");
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
+
+  .parallax2{
+    background-image:url("../images/school/school_side1.jpg");
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .parallax3{
+    background-image:url("../images/school/school_front_far.jpg");
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   /* Loading circles */
@@ -1256,9 +1269,40 @@ fieldset {
   - further decrease size of sections
   - increase size of headings and global fonts
   */
-  body {
-    background: aqua;
+  .parallax1{
+    background-image:url("../images/masjid/masjid_far.png");
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
   }
+
+
+  .parallax2{
+    background-image:url("../images/masjid/masjid_umar_inside1.png");
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .parallax3{
+    background-image:url("../images/masjid/masjid_umar_rooftop.png");
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
 
 
 
