@@ -2,178 +2,155 @@
 <html>
 <head>
   <title>Jogwad</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" type="text/css"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  </head>
-
-<!--
-https://codepen.io/peternakblog/pen/zGwoOQ
-Add this animation on the page. Its like dark night time
-
-https://codepen.io/dudleystorey/pen/XJWqgz
-Images shown at top. When clicked bigger image is shown underneath
-
-https://codepen.io/chriscoyier/pen/QKYvNo
-Image Slider
-
-https://codepen.io/nebo/pen/ONXejO
-All images shown. If click it gets bigger with other images opacity lowered
-
-
-https://codepen.io/clagom/pen/albmD
-Really slick gallery, bit complex to use for users
-
-
-https://codepen.io/lu-kanemon/pen/gpydpa
-Simple gallery
-
-
-https://codepen.io/imelgrat/pen/epBEZz
-3D type of gallery.
-
-https://codepen.io/TimWilliams614/pen/qbamxj
-
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox
-USED this for gallery
-
--->
-
+</head>
 
 <body>
-
   <!-- Parallax 1 starts -->
   <section class="parallax1">
 
+
     <header>
-    <h1 class="header_title"> Jogwad </h1>
-    <!-- Doesnt work to 5 hours 30 mins
-    <p id="clock"></p>
-  -->
+      <h1 class="header_title"> Jogwad </h1>
+      <a href="#" id="navBtn">&#x2630;</a>
+      <nav>
+        <ul id="nav-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="info.html">Infromation</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <a href="about.html" class="page_title"> About Us </a>
 
-	<a href="#" id="navBtn">&#x2630;</a>
-    <nav>
-      <ul id="nav-menu">
-        <li> <a href="index.html">Home</a> </li>
-        <li> <a href="info.html">Infromation</a> </li>
-        <li><a href="about.html">About Us</a> </li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <!-- The Timeline -->
+      <section class="timeline_section">
+        <h2> Village Timeline </h2>
+        <ul class="timeline">
+          <!-- Item 1 -->
+          <li>
+            <section class="direction-r">
+              <section class="flag-wrapper">
+                <span class="flag">School gains recognition</span>
+                <span class="time-wrapper">
+                  <span class="time">2016- present</span>
+                </span>
+              </section>
+              <section class="desc">The school has gained recognition from surrounding villages for the
+                amount of success and help it has provided to the students</section>
+              </section>
+            </li>
+            <li>
+              <section class="direction-l">
+                <section class="flag-wrapper">
+                  <span class="flag">Progression during tough world crisis</span>
+                  <span class="time-wrapper">
+                    <span class="time">2000-2016</span>
+                  </span>
+                </section>
+                <section class="desc">The village has progressed alot.</section>
+              </section>
+            </li>
+            <!-- Item 3 -->
+            <li>
+              <section class="direction-r">
+                <section class="flag-wrapper">
+                  <span class="flag">Period of growth</span>
+                  <span class="time-wrapper">
+                    <span class="time">1990-2000</span>
+                  </span>
+                </section>
+                <section class="desc">Many people start moving in to the village and farms and revenue of village increases.</section>
+              </section>
+            </li>
+            <li>
+              <section class="direction-l">
+                <section class="flag-wrapper">
+                  <span class="flag">Village Founded</span>
+                  <span class="time-wrapper">
+                    <span class="time">1800</span>
+                  </span>
+                </section>
+                <section class="desc">Kasamjee Desai is the founder of the village</section>
+              </section>
+            </li>
+          </ul>
+        </section>
 
-  <main>
+      </main>
+    </section>
+    <!-- paralax 1 ends -->
 
-  <!-- The Timeline -->
-<section class="timeline_section">
-  <h2> Village Timeline </h2>
-  <ul class="timeline">
+    <!-- Second parallax begins -->
+    <section class="parallax2">
+      <form id="contact" method="post">
 
-  	<!-- Item 1 -->
-  	<li>
-  		<section class="direction-r">
-  			<section class="flag-wrapper">
-  				<span class="flag">School gains recognition</span>
-  				<span class="time-wrapper"><span class="time">2017</span></span>
-  			</section>
-  			<section class="desc">The school has gained recognition from surrounding villages for the
-        amount of success and help it has provided to the students</section>
-  		</section>
-  	</li>
-  	<!-- Item 2 -->
-  </section>
-  <!-- First parallax ends -->
+        <h3>Send us your feedback</h3>
+        <h4>Let us know what you think of this website and Jogwad</h4>
+        <fieldset>
+          <input placeholder="First Name*" type="text" tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Last Name*" type="text" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Phone Number" type="tel" tabindex="5">
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address*" type="email" tabindex="6" required>
+        </fieldset>
+        <fieldset>
+          <textarea class="feedback" placeholder="Please leave feedback*" required></textarea>
+        </fieldset>
+        <h4>*Indicates a required field</h4>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </form>
 
-  <!-- Second parallax begins -->
-  <section class="parallax2">
-  	<li>
-  		<section class="direction-l">
-  			<section class="flag-wrapper">
-  				<span class="flag">Progression during tough world crisis</span>
-  				<span class="time-wrapper"><span class="time">1900 - 2000</span></span>
-  			</section>
-  			<section class="desc">The village has progressed alot. </section>
-  		</section>
-  	</li>
-  	<!-- Item 3 -->
-  	<li>
-  		<section class="direction-r">
-  			<section class="flag-wrapper">
-  				<span class="flag">Period of growth</span>
-  				<span class="time-wrapper"><span class="time">1800 - 1900 </span></span>
-  			</section>
-  			<section class="desc">Many people start moving in to the village and farms and revenue of village increases. </section>
-  		</section>
-  	</li>
+      <!-- second paralax ends -->
+    </section>
 
-    <!-- Item 4 -->
-    <li>
-  		<section class="direction-r">
-  			<section class="flag-wrapper">
-  				<span class="flag">Village founded</span>
-  				<span class="time-wrapper"><span class="time">1800</span></span>
-  			</section>
-  			<section class="desc">The village is founded by Kasamjee Desai. </section>
-  		</section>
-  	</li>
-  </section>
-  <!-- paralax 2 ends -->
 
-  </ul>
-
-<form id="contact" method="post">
-  <!-- Third parallax begins -->
-  <section class="parallax3">
-  <h3>Send us your feedback</h3>
-  <h4>Let us know what you think of this website and Jogwad</h4>
-  <fieldset>
-    <input placeholder="First Name*" type="text" tabindex="1" required>
-  </fieldset>
-  <fieldset>
-    <input placeholder="Last Name*" type="text" tabindex="2" required>
-  </fieldset>
-  <fieldset>
-  <input placeholder="Phone Number" type="tel" tabindex="5">
-  </fieldset>
-  <fieldset>
-  <input placeholder="Your Email Address*" type="email" tabindex="6" required>
-  </fieldset>
-
-  <fieldset>
-    <textarea class="feedback" placeholder="Please leave feedback*" required></textarea>
-  </fieldset>
-
-<!--
-  <textarea placeholder="Feedback*" required>Please leave your feedback</textarea>
--->
-  <h4>*Indicates a required field</h4>
-    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-</form>
-  </main>
-  <footer>
-
-  <hr>
-	  	<ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-        <li> <a href="https://www.instagram.com/jogwad_village/"><i class="fa fa-instagram"></i></a></li>
-	      <li> <a href="https://www.facebook.com/Jogwad.Village/"><i class="fa fa-facebook"></i></a></li>
-        <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li> <a href="https://twitter.com/Jogwad_Village"><i class="fa fa-twitter"></i></a></li>
-      	<li class="footer_copyright">
+    <footer>
+      <hr>
+      <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+        <li>
+          <a href="https://www.instagram.com/jogwad_village/">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Jogwad.Village/">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Jogwad_Village">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="footer_copyright">
           <i class="fa fa-copyright">Soyeb Patel</i>
         </li>
-		</ul>
-	  	<hr />
+      </ul>
+      <hr />
     </footer>
 
-<!-- Third paralax ends -->
-</section>
-
-  <script src="javascript/hamburger_menu.js"></script>
-
-</body>
-
-</html>
+    <script src="javascript/hamburger_menu.js"></script>
+  </body>
+  </html>

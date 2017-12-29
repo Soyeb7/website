@@ -40,9 +40,7 @@ Toggle Buttons
 
 
 body {
- /* background-image: url("../images/village/hilltop.png"); */
-  border: 10px;
-  border-radius: 20px;
+  /* background-image: url("../images/village/hilltop.png"); */
   height: 100%;
 }
 
@@ -53,125 +51,101 @@ body p {
 .parallax1{
   background-image:url("../images/village/road.png");
   position: relative;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    max-width: 100%;
-    margin: 0 auto;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 
 .parallax2{
   background-image:url("../images/village/hilltop.png");
   position: relative;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    max-width: 100%;
-    margin: 0 auto;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .parallax3{
   background-image:url("../images/village/sunset.png");
   position: relative;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    max-width: 100%;
-    margin: 0 auto;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 
 header{
-	background-color: red;
-	margin-bottom: 10px;
-	height: auto;
-	margin-top: -17px;
+  margin-bottom: 10px;
+  height: auto;
+  margin-top: -17px;
+  color: white;
 
-}
-
-header form {
-	float: left;
 }
 
 header a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .header_title {
-	font-size: 25px;
-	margin-bottom: 15px;
-	padding-top: 10px;
-	padding-left: 10px;
+  font-size: 25px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
 
 }
-
-
-.page_title {
-	font-size: 20px;
-	margin-left: 20px;
-}
-
-
-/*
-The  language button (dropdown) does not look the same in mobile as desktop view right now.
-
-Doesnt look right in oriented form either.
-*/
-
-#language_button {
-
-  margin-left: 12px;
-	margin-right: 10px;
-	width: 100%;
-  font-size: 18px;
-
-}
-
-
 
 #navBtn {
-	margin-top: -50px;
-	font-size: 50px;
-	float: right;
+  margin-top: -50px;
+  font-size: 30px;
+  float: right;
 }
 nav {
-	float: right;
-	width: 100%;
-	margin-bottom: 10px;
+  float: right;
+  width: 100%;
+
 }
 
 #nav-menu {
-	position: relative;
-	top: -20px;
+  position: relative;
+  top: -20px;
 
 }
 
 #nav-menu li{
-	background-color: red;
-	width: 100%;
-	font-size: 20px;
-	list-style-type: none;
-	height: 35px;
-
+  width: 100%;
+  font-size: 20px;
+  list-style-type: none;
+  height: 35px;
 }
 
 #nav-menu li a {
-	margin-left: 10px;
-	width: 100%;
+  margin-left: 10px;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+}
+
+#nav-menu li a:hover {
+  color: black;
 }
 
 /* Navigation Javascript*/
 
 #nav-menu {
-	display:none;
+  display:none;
 }
 
 .nav-menu-show {
-	display:inline-block;
+  display:inline-block;
 
 }
 
@@ -179,26 +153,29 @@ nav {
   display: none;
 }
 
-
 /* Main Section */
-
-
-
-
 /* Top home section */
 
 .top-home-section {
-	border: solid 5px;
-	display: flex;
+  border: solid 1px;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 5px;
+
+
+}
+
+.other_page_info h3{
+  color: white;
+}
+.other_page_info p {
+  font-size: 18px;
 }
 
 #typedtext {
-
-font-family: 'Waiting for the Sunrise', cursive;
+  font-family: 'Waiting for the Sunrise', cursive;
   font-size:30px;
   margin: 10px 50px;
   letter-spacing: 6px;
@@ -207,9 +184,9 @@ font-family: 'Waiting for the Sunrise', cursive;
 }
 
 .top-home-section p {
-animation:1s ease 2s normal forwards 1 fadein;
-animation:1s ease 2s normal forwards 1 fadein;
-opacity:0
+  animation:1s ease 2s normal forwards 1 fadein;
+  animation:1s ease 2s normal forwards 1 fadein;
+  opacity:0
 }
 
 @keyframes fadein{from{opacity:0}
@@ -219,20 +196,16 @@ to{opacity:1}
 @keyframes fadein{from{opacity:0}
 to{opacity:1}
 }
-
-
-
-
 
 /* Gallery middle of home page */
 
 .photos-middle-of-page {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 
-animation:1s ease 2s normal forwards 1 fadein;
-animation:1s ease 2s normal forwards 1 fadein;
-opacity:0
+  animation:1s ease 2s normal forwards 1 fadein;
+  animation:1s ease 2s normal forwards 1 fadein;
+  opacity:0
 }
 @keyframes fadein{from{opacity:0}
 to{opacity:1}
@@ -244,17 +217,17 @@ to{opacity:1}
 
 
 .photos-middle-of-page img{
-	max-width:44%;
-	height: auto;
+  max-width:44%;
+  height: auto;
   margin-left: 14px;
-  border-radius: 5px;
+  border-radius: 1px;
   transition: all 0.7s ease;
-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 
 }
 
 .photos-middle-of-page p {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -263,7 +236,7 @@ display: flex;
 .photos-middle-of-page img:hover{
   border-radius: 50%;
   transform:scale(0.9);
-	transform:scale(0.9);
+  transform:scale(0.9);
 }
 
 /* News in home section */
@@ -274,55 +247,51 @@ display: flex;
 /*
 .other_page_info {
 
-	width: 100%;
-	border: 5px solid;
-	height: auto;
+width: 100%;
+border: 5px solid;
+height: auto;
 
 }
 
 .development_in_home {
-	border-radius: 10px;
-	border: solid 5px;
-	max-width: 48%;
-	height: auto;
-	display: inline-block;
-	margin: 10px;
+border-radius: 10px;
+border: solid 5px;
+max-width: 48%;
+height: auto;
+display: inline-block;
+margin: 10px;
 
 }
 
 
 .history_in_home {
-	border-radius: 10px;
-	border: solid 5px;
-	max-width: 48%;
-	height: auto;
-	display: inline-block;
-	margin: 10px;
+border-radius: 10px;
+border: solid 5px;
+max-width: 48%;
+height: auto;
+display: inline-block;
+margin: 10px;
 
 }
-
-
 */
 
 .other_page_info {
-
-	width: 100%;
-	height: auto;
-animation:1s ease 2s normal forwards 1 fadein;
-animation:1s ease 2s normal forwards 1 fadein;
-opacity:0;
+  width: 100%;
+  height: auto;
+  animation:1s ease 2s normal forwards 1 fadein;
+  animation:1s ease 2s normal forwards 1 fadein;
+  opacity:0;
 
 }
 
-
 .development_in_home {
-	border-radius: 10px;
-	border: solid 5px;
+  border-radius: 10px;
+  border: solid 1px;
   margin-bottom: 10px;
-    padding: 5px;
+  padding: 5px;
 
   @keyframes fadein{from{opacity:0}
-to{opacity:1}
+  to{opacity:1}
 }
 
 @keyframes fadein{from{opacity:0}
@@ -332,12 +301,12 @@ to{opacity:1}
 
 
 .history_in_home {
-	border-radius: 10px;
-	border: solid 5px;
-	margin-bottom: 10px;
-	  padding: 5px;
-	@keyframes fadein{from{opacity:0}
-to{opacity:1}
+  border-radius: 10px;
+  border: solid 1px;
+  margin-bottom: 10px;
+  padding: 5px;
+  @keyframes fadein{from{opacity:0}
+  to{opacity:1}
 }
 
 @keyframes fadein{from{opacity:0}
@@ -368,7 +337,6 @@ to{opacity:1}
 
 }
 
-
 .showhide_input_button:before {
   font-family: FontAwesome;
   content: "\f0fe";
@@ -393,8 +361,8 @@ to{opacity:1}
 
 .showhide2{
 
-	font-size:22px;
-	padding: 5px;
+  font-size:22px;
+  padding: 5px;
 
 }
 
@@ -408,42 +376,39 @@ to{opacity:1}
 /* CSS only show hide Ends */
 
 
-
-
-
+.map_home h2{
+  color: white;
+}
 
 /* Clock */
 
-
 .main_time {
-  border: 5px solid;
+  border: 1px solid;
   width: 90%;
   margin: 0 auto;
   height: 100%;
-	animation:1s ease 2s normal forwards 1 fadein;
-animation:1s ease 2s normal forwards 1 fadein;
-opacity:0
+  animation:1s ease 2s normal forwards 1 fadein;
+  animation:1s ease 2s normal forwards 1 fadein;
+  opacity:0
 
 }
 
 .main_time h3, p {
-	  padding: 5px;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 
 }
-
-
-
 /* First Clock CSS */
 .first_clock {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   @keyframes fadein{from{opacity:0}
-to{opacity:1}
+  to{opacity:1}
 }
 
 @keyframes fadein{from{opacity:0}
@@ -459,17 +424,17 @@ to{opacity:1}
 
 
 .text_box_clock p{
-	font-size: 20px;
+  font-size: 20px;
 }
 
 /* Second Clock CSS */
 .second_clock {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-@keyframes fadein{from{opacity:0}
-to{opacity:1}
+  @keyframes fadein{from{opacity:0}
+  to{opacity:1}
 }
 
 @keyframes fadein{from{opacity:0}
@@ -605,69 +570,69 @@ line {
 
 
 footer {
-	width: 100%;
-	display: flex;
-	align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-	border-top:2px solid #1C1E26 ;
-	border-bottom:2px solid #38404D;
-	margin-top: 10px;
+  border-top:1px solid #1C1E26 ;
+  border-bottom:1px solid #38404D;
+  margin-top: 10px;
   text-align: center;
 
 }
 
 hr{
-	display: none;
+  display: none;
 }
 
 .list-unstyled {
-	padding-left: 0;
-	list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 .list-inline li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 10px;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
 
 }
 
 
 .social-icons .fa {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 .social-icons .fa {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	color: #FFF;
-	color: rgba(255, 255, 255, 0.8);
-	transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-icons.icon-circle .fa{
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .social-icons .fa:hover, .social-icons .fa:active {
-	color: #FFF;
-	box-shadow: 1px 1px 3px #333;
-	box-shadow: 1px 1px 3px #333;
-	box-shadow: 1px 1px 3px #333;
+  color: #FFF;
+  box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #333;
 }
 .social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active {
-	transform: scale(1.1) rotate(360deg);
-	transform: scale(1.1) rotate(360deg);
-	transform: scale(1.1) rotate(360deg);
-	transform: scale(1.1) rotate(360deg);
-	transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
 }
 
 /* Color of the icon */
@@ -685,21 +650,21 @@ hr{
 
 
 .footer_copyright {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 
 .footer_copyright .fa{
-	box-shadow: none;
-	width: auto;
-	color: gray;
+  box-shadow: none;
+  width: auto;
+  color: gray;
 
 }
 .footer_copyright .fa:hover {
-	box-shadow: 2px 2px 3px #333;
-	box-shadow: 2px 2px 3px #333;
-	box-shadow: 2px 2px 3px #333;
-	color: black;
+  box-shadow: 2px 2px 3px #333;
+  box-shadow: 2px 2px 3px #333;
+  box-shadow: 2px 2px 3px #333;
+  color: black;
 
 }
 
@@ -712,63 +677,63 @@ hr{
 .parallax1_info{
   background-image:url("../images/village/tunnel.png");
   position: relative;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    max-width: 100%;
-    margin: 0 auto;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 
 .parallax2_info{
   background-image:url("../images/village/ambika_river2.jpg");
   position: relative;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    max-width: 100%;
-    margin: 0 auto;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .population_info, .facilties_info, .nearby_info h2, p{
-	padding: 10px;
+  padding: 10px;
 
 
 }
 
 
 .population_info:hover{
-	box-shadow: 0px 0px 150px #000000;
-	transition: all 200ms ease-in;
-	font-size: 26px;
-	transform: scale(0.9);
+  box-shadow: 0px 0px 150px #000000;
+  transition: all 200ms ease-in;
+  font-size: 26px;
+  transform: scale(0.9);
 
 
 }
 
 .facilties_info:hover{
-	box-shadow: 0px 0px 150px #000000;
-	transition: all 200ms ease-in;
-	font-size: 26px;
-	transform: scale(0.9);
+  box-shadow: 0px 0px 150px #000000;
+  transition: all 200ms ease-in;
+  font-size: 26px;
+  transform: scale(0.9);
 }
 
 .nearby_info:hover{
-	box-shadow: 0px 0px 150px #000000;
-	transition: all 200ms ease-in;
-	font-size: 26px;
-	transform: scale(0.9);
+  box-shadow: 0px 0px 150px #000000;
+  transition: all 200ms ease-in;
+  font-size: 26px;
+  transform: scale(0.9);
 }
 
 
 /* Map */
 
 .map_jogwad {
-	animation:1s ease 2s normal forwards 1 fadein;
-	animation:1s ease 2s normal forwards 1 fadein;
-	opacity:0;
+  animation:1s ease 2s normal forwards 1 fadein;
+  animation:1s ease 2s normal forwards 1 fadein;
+  opacity:0;
 }
 
 #map {
@@ -779,7 +744,7 @@ hr{
   border-radius: 15px;
 
 }
-  @keyframes fadein {from{opacity:0}
+@keyframes fadein {from{opacity:0}
 to{opacity:1}
 }
 
@@ -795,19 +760,19 @@ to{opacity:1}
 /* Info Page Images */
 
 .photos-middle-of-page_2 {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 .photos-middle-of-page_2 p {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .photos-middle-of-page_2 img{
-	max-width:44%;
-	height: auto;
+  max-width:44%;
+  height: auto;
   margin-left: 14px;
   border-radius: 5px;
   transition: all 0.7s ease;
@@ -825,38 +790,38 @@ display: flex;
 
 /* Family Lineage with JS */
 
+.family_lineage {
+  color: white;
+}
 button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 1s;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 1s;
 
 
-	/* Doesnt work when image is in own folder
-	background-image: url(../images/icons/escheresque.png");
-	background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
-	*/
+  /* Doesnt work when image is in own folder
+  background-image: url(../images/icons/escheresque.png");
+  background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
+  */
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 
 }
 section.panel {
-    padding: 0 18px;
-    display: none;
-   background-color: #34495e;
+  padding: 0 18px;
+  display: none;
+  background-color: #34495e;
 
 }
-
-
-
 /* About Us page */
 
 .timeline {
@@ -1033,83 +998,83 @@ section.panel {
 }
 
 .timeline {
- 	width: 100%;
-	padding: 4em 0 1em 0;
+  width: 100%;
+  padding: 4em 0 1em 0;
 }
 
 .timeline li {
-	padding: 2em 0;
+  padding: 2em 0;
 }
 
 .direction-l,
 .direction-r {
-	float: none;
-	width: 100%;
-	text-align: center;
+  float: none;
+  width: 100%;
+  text-align: center;
 }
 
 .flag-wrapper {
-	text-align: center;
+  text-align: center;
 }
 
 .flag {
-	background: rgb(255,255,255);
-	z-index: 15;
+  background: rgb(255,255,255);
+  z-index: 15;
 }
 
 .direction-l .flag:before,
 .direction-r .flag:before {
   position: absolute;
   top: -30px;
-	left: 50%;
-	content: ' ';
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin-left: -9px;
-	background: #fff;
-	border-radius: 10px;
-	border: 4px solid rgb(255,80,80);
-	z-index: 10;
+  left: 50%;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: -9px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255,80,80);
+  z-index: 10;
 }
 
 .direction-l .flag:after,
 .direction-r .flag:after {
-	content: "";
-	position: absolute;
-	left: 50%;
-	top: -8px;
-	height: 0;
-	width: 0;
-	margin-left: -8px;
-	border: solid transparent;
-	border-bottom-color: rgb(255,255,255);
-	border-width: 8px;
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  height: 0;
+  width: 0;
+  margin-left: -8px;
+  border: solid transparent;
+  border-bottom-color: rgb(255,255,255);
+  border-width: 8px;
+  pointer-events: none;
 }
 
 .time-wrapper {
-	display: block;
-	position: relative;
-	margin: 4px 0 0 0;
-	z-index: 14;
+  display: block;
+  position: relative;
+  margin: 4px 0 0 0;
+  z-index: 14;
 }
 
 .direction-l .time-wrapper {
-	float: none;
+  float: none;
 }
 
 .direction-r .time-wrapper {
-	float: none;
+  float: none;
 }
 
 .desc {
-	position: relative;
-	margin: 1em 0 0 0;
-	padding: 1em;
-	background: rgb(245,245,245);
-	shadow: 0 0 1px rgba(0,0,0,0.20);
-	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  position: relative;
+  margin: 1em 0 0 0;
+  padding: 1em;
+  background: rgb(245,245,245);
+  shadow: 0 0 1px rgba(0,0,0,0.20);
+  box-shadow: 0 0 1px rgba(0,0,0,0.20);
 
 
   z-index: 15;
@@ -1117,9 +1082,9 @@ section.panel {
 
 .direction-l .desc,
 .direction-r .desc {
-	position: relative;
-	margin: 1em 1em 0 1em;
-	padding: 1em;
+  position: relative;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
 
   z-index: 15;
 }
@@ -1130,43 +1095,43 @@ section.panel {
 /* -- Form Starts -- */
 
 #contact input[type="text"],#contact input[type="textarea"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"]{
-   font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
- }
+  font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
 
 #contact {
-    background:#F9F9F9;
-    padding:25px;
-    margin:50px 0;
-    text-align: center;
+  background:#F9F9F9;
+  padding:25px;
+  margin:50px 0;
+  text-align: center;
 }
 
 #contact h3 {
-    color: #DEB887;
-    display: block;
-    font-size: 30px;
-    font-weight: 400;
+  color: #DEB887;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 #contact h4 {
-    margin:5px 0 15px;
-    display:block;
-    font-size:13px;
+  margin:5px 0 15px;
+  display:block;
+  font-size:13px;
 }
 
 fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-    width:80%;
-    border:1px solid #CCC;
-    background:#FFF;
-    margin:0 0 5px;
-    padding:10px;
+  width:80%;
+  border:1px solid #CCC;
+  background:#FFF;
+  margin:0 0 5px;
+  padding:10px;
 }
 .feedback {
   width:80%;
@@ -1178,61 +1143,61 @@ fieldset {
 }
 
 #contact input[type="text"]:hover,  #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-    transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    border:2px solid #AAA;
+  transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+  border:2px solid #AAA;
 }
 
 
 .feedback {
-    height:150px;
-    max-width:100%;
-    resize:none;
+  height:150px;
+  max-width:100%;
+  resize:none;
 }
 
 #contact button[type="submit"] {
-    cursor:pointer;
-    width:80px;
-    border:none;
-    background:gray;
-    color:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-    font-size:15px;
+  cursor:pointer;
+  width:80px;
+  border:none;
+  background:gray;
+  color:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+  font-size:15px;
 }
 
 #contact button[type="submit"]:hover {
-    background:#09C;
-    transition:background 0.3s ease-in-out;
-    transition:background 0.3s ease-in-out;
-    transition:background-color 0.3s ease-in-out;
-    border-radius: 35px;
-    transition: all 0.7s ease;
+  background:#09C;
+  transition:background 0.3s ease-in-out;
+  transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+  border-radius: 35px;
+  transition: all 0.7s ease;
   transition: all 0.7s ease;
   transform:scale(0.9);
-	transform:scale(0.9);
+  transform:scale(0.9);
 
 }
 
 #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 #contact input:focus, #contact textarea:focus {
-    outline:0;
-    border:1px solid #999;
+  outline:0;
+  border:1px solid #999;
 }
 
 :input-placeholder {
- color:#888;
+  color:#888;
 }
 :placeholder {
- color:#888;
+  color:#888;
 }
 :placeholder {
- color:#888;
+  color:#888;
 }
 :input-placeholder {
- color:#888;
+  color:#888;
 }
 
 /* Form ends */
@@ -1244,38 +1209,38 @@ fieldset {
 
 @media screen and (min-width: 650px) {
   /*
-    - applies to screens larger than 650px (unless specifically overwritten these styles will also apply to screens larger than 999px)
-    - add any hover states here
-    - increase font sizes
-    - add margins and padding to space things out
-    - decrease width of sections
-    - add `display: inline-block;` so that sections will float next to each other
+  - applies to screens larger than 650px (unless specifically overwritten these styles will also apply to screens larger than 999px)
+  - add any hover states here
+  - increase font sizes
+  - add margins and padding to space things out
+  - decrease width of sections
+  - add `display: inline-block;` so that sections will float next to each other
   */
 
   body {
-  background: green;
+    background: green;
 
-}
+  }
 
-/* Loading circles */
-@keyframes loading {
-  100% { r: 15; }
-}
+  /* Loading circles */
+  @keyframes loading {
+    100% { r: 15; }
+  }
 
-.child {
-  display: inline-block;
-  visibility: visible;
-  max-width: 12rem;
-  padding: 1rem;
-  width: 100%;
-  margin: auto;
-  top: 0; bottom: 0; left: 0; right: 0;
-  position: absolute;
-}
+  .child {
+    display: inline-block;
+    visibility: visible;
+    max-width: 12rem;
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    position: absolute;
+  }
 
-.circle-1 { animation: loading 1.25s  }
-.circle-2 { animation: loading 1.25s .3125s; }
-.circle-3 { animation: loading 1.25s .625s; }
+  .circle-1 { animation: loading 1.25s  }
+  .circle-2 { animation: loading 1.25s .3125s; }
+  .circle-3 { animation: loading 1.25s .625s; }
 
 }
 
@@ -1286,13 +1251,13 @@ fieldset {
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1200px) {
   /*
-    - applies to screens larger than 999px only
-    - add a max-width to your main section
-    - further decrease size of sections
-    - increase size of headings and global fonts
+  - applies to screens larger than 999px only
+  - add a max-width to your main section
+  - further decrease size of sections
+  - increase size of headings and global fonts
   */
   body {
-  background: aqua;
+    background: aqua;
   }
 
 
